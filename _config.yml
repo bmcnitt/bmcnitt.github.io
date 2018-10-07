@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Brian's Potfolio"
+title                    : "Brian's Portfolio"
 title_separator          : "-"
 name                     : "Brian McNitt"
-description              : "An amazing website."
+description              : "A collection of work by Brian McNitt"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -103,12 +103,54 @@ analytics:
 author:
   name             : "Brian McNitt"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Interested in statistics and software engineering"
+  bio              : "Interested in data science and software engineering"
   location         : "Boston, MA"
-  email            : "bmcnitt@su.suffolk.edu"
-  linkedin         : "brian-mcnitt"
-  github           : "bmcnitt"
-  
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+       url: mailto:bmcnitt@su.suffolk.edu"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+       url: "https://github.com/bmcnitt/"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+       url: "https://www.linkedin.com/in/brian-mcnitt/"  
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+
+
 # Reading Files
 include:
   - .htaccess
@@ -248,10 +290,3 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _pages:
-   - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
