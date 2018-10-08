@@ -1,10 +1,8 @@
----
 layout: archive
 title: "Projects"
 permalink: : /projects/
 author_profile: true
-header:
-	image: "/assets/images/bostonSkyline.jpg"
+
 ---
 
 {% include base_path %}
@@ -16,4 +14,4 @@ header:
   {% for post in posts %}
     {% include archive-single.html %}
   {% endfor %}
-{% endfor %}
+{% endfor %}x
