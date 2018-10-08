@@ -1,8 +1,8 @@
 # main links
 main:
-  - title: "About"
+  - title: About
     url: https://bmcnitt.github.io/about/
-  - title: "Projects"
+  - title: Projects
     url: https://bmcnitt.github.io/projects/
   # - title: "Sample Posts"
   #   url: /year-archive/
