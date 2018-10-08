@@ -1,6 +1,6 @@
 layout: archive
 title: "Projects"
-permalink: : /projects/
+permalink: : https://bmcnitt.github.io/projects/
 author_profile: true
 
 ---
