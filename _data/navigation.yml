@@ -1,12 +1,7 @@
-# main links
-main:
-  - title: About
-    url: https://bmcnitt.github.io/about/
-  - title: Projects
-    url: https://bmcnitt.github.io/projects/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+# Site navigation links
+
+- title: About
+  url: /posts/
+
+- title: CV
+  url: /projects/
