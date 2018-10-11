@@ -1,6 +1,10 @@
+---
 title: "About"
-permalink: : https://bmcnitt.github.io/about/
-
+permalink: /about/
+header:
+  image: "/images/zakim.jpg"
 ---
 
-I'm a data scientist who excels at data analysis and visualizations. Learning machine learning methods.
+I'm a senior data scientist who excels at machine learning, exploratory analysis, and data visualizations.
+
+Etc, etc, etc
