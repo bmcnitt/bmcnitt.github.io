@@ -5,6 +5,5 @@ header:
   image: "/images/zakim.jpg"
 ---
 
-I'm a full time student with an interest in statistics, data analytics, and machine learning. Expecting to graduate with a Bachelors of Science in Business Administration (BSBA) in December 2018 and a major Business Analytics. 
+I graduated from Suffolk University in Boston, MA in December 2018, majoring in Business Analytics. I'm interested how organizations can use data and statistics to drive business decisions. On this website I'll share some of my work and other things I think are interesting in the field.
 
-I'll post my personal projects here
