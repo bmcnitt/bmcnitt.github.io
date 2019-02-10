@@ -749,7 +749,7 @@ df['etitle'].value_counts().plot.bar();
 ```
 
 
-![png](C:\Users\Brian\Desktop\bmcnitt.github.io\bmcnitt.github.io\images\VotesProject\output_53_0.png)
+![png]({{ site.url }}{{ site.baseurl }}images\VotesProject\output_53_0.png)
 
 
 
