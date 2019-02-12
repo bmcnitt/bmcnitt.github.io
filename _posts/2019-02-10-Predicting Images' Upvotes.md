@@ -749,7 +749,7 @@ df['etitle'].value_counts().plot.bar();
 ```
 
 
-![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\{{ site.url }}{{ site.baseurl }}\images\VotesProject\output_53_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_53_0.png)
 
 
 
@@ -760,7 +760,7 @@ df['region'].value_counts().plot.bar();
 ```
 
 
-![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\{{ site.url }}{{ site.baseurl }}\images\VotesProject\output_54_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\\output_54_0.png)
 
 
 Although we can't see the names of the regions using this graph we still get an idea of their counts.
