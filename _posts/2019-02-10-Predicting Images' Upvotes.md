@@ -471,7 +471,7 @@ takenonMissing[1].value_counts().plot.barh();
 ```
 
 
-![png](output_25_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_25_0.png)
 
 
 Pictures mostly taken in summer months (assuming northern hemisphere).
@@ -749,7 +749,7 @@ df['etitle'].value_counts().plot.bar();
 ```
 
 
-![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_53_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\{{ site.url }}{{ site.baseurl }}\images\VotesProject\output_53_0.png)
 
 
 
@@ -760,7 +760,7 @@ df['region'].value_counts().plot.bar();
 ```
 
 
-![png](output_54_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\{{ site.url }}{{ site.baseurl }}\images\VotesProject\output_54_0.png)
 
 
 Although we can't see the names of the regions using this graph we still get an idea of their counts.
@@ -774,7 +774,7 @@ plt.hist(df['votes'], bins = 60,  label = 'Upvotes');
 ```
 
 
-![png](output_56_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_56_0.png)
 
 
 Resembles a Poisson distribution, makes sense, being that it is count data. However the mean does not approxamately equal the variance, an assumption of the poisson distribution.
@@ -820,7 +820,7 @@ plt.hist(viewedRemovedOutliers, bins = 30);
 ```
 
 
-![png](output_62_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_62_0.png)
 
 
 
@@ -832,7 +832,7 @@ plt.hist(commentsRemovedOutliers, bins = 15);
 ```
 
 
-![png](output_63_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_63_0.png)
 
 
 plt.figure(figsize=(10,10))
@@ -850,7 +850,7 @@ plt.hist(author_avg['authorid_mean_comments'][~is_outlier(author_avg['authorid_m
 ```
 
 
-![png](output_65_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_65_0.png)
 
 
 Line chart of number of AVG daily number of posts, upvotes, views, comments by year. This can tell use if theres any cyclical or seasonal component. Could hint to us if year and month is a strong predictor.  
@@ -942,7 +942,7 @@ plt.scatter(TimeSeries.index,TimeSeries['votes'], s=0.7);
 ```
 
 
-![png](output_68_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_68_0.png)
 
 
 At 2006, we see a sharp fall then rise of avg daily votes. It seams to interrupt the increasing trend. The variability also sharply decreases for that couple month time period. (perhaps there was some type of bug?) Lets dive a little deeper
@@ -957,7 +957,7 @@ plt.scatter(TimeSeries06.index,TimeSeries06['votes']);
 ```
 
 
-![png](output_70_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_70_0.png)
 
 
 We'll calculate basic summary statistics for 2005-06-01:2006-01-01, and compare with the 6 months prior and following.
@@ -1228,7 +1228,7 @@ plt.scatter(TimeSeries.index,TimeSeries['n_comments'], s=0.7);
 ```
 
 
-![png](output_75_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_75_0.png)
 
 
 At around 2006, n_comments spike sharply. It also seams strange that the spike is at about the same period as the AVG daily votes increase.  (perhaps a website feature change? I doubt these two are independent)
@@ -1241,7 +1241,7 @@ plt.scatter(TimeSeries.index,TimeSeries['viewed'], s=0.7);
 ```
 
 
-![png](output_77_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_77_0.png)
 
 
 #### Basic Multivariate analysis
@@ -1262,7 +1262,7 @@ sns.barplot(x="votes",y="etitle", color = 'c',data=df, order = result1['etitle']
 ```
 
 
-![png](output_81_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_81_0.png)
 
 
 
@@ -1273,11 +1273,11 @@ df.groupby(df.etitle)['votes'].agg('mean').sort_values().plot.barh();
 ```
 
 
-![png](output_82_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_82_0.png)
 
 
 
-![png](output_82_1.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_82_1.png)
 
 
 
@@ -1292,7 +1292,7 @@ sns.barplot(x="votes",y="region", color = 'b',data=df, order = result2['region']
 ```
 
 
-![png](output_83_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_83_0.png)
 
 
 
@@ -1303,11 +1303,11 @@ df.groupby(df.region)['votes'].agg('mean').sort_values().plot.barh();
 ```
 
 
-![png](output_84_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_84_0.png)
 
 
 
-![png](output_84_1.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_84_1.png)
 
 
 Pretty wide CI's for region average votes .
@@ -1318,7 +1318,7 @@ df.groupby(df.day_of_week)['votes'].agg('mean').sort_values().plot.barh();
 ```
 
 
-![png](output_86_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_86_0.png)
 
 
 
@@ -1348,7 +1348,7 @@ sns.barplot(x="votes",y="day_of_week", color = 'r',data=df, order = result2['day
 ```
 
 
-![png](output_88_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_88_0.png)
 
 
 
@@ -1388,7 +1388,7 @@ sns.pairplot(df[numerical_feats])
 
 
 
-![png](output_91_1.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_91_1.png)
 
 
 
@@ -1419,7 +1419,7 @@ sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
 
 
 
-![png](output_92_1.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_92_1.png)
 
 
 All numerical features have pretty weak linear relationships with our votes.
@@ -1434,27 +1434,27 @@ for num in list(numerical_feats) :
 ```
 
 
-![png](output_95_0.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_0.png)
 
 
 
-![png](output_95_1.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_1.png)
 
 
 
-![png](output_95_2.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_2.png)
 
 
 
-![png](output_95_3.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_3.png)
 
 
 
-![png](output_95_4.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_4.png)
 
 
 
-![png](output_95_5.png)
+![png]({{ site.url }}{{ site.baseurl }}\images\VotesProject\output_95_5.png)
 
 
 n_comments has the strongest linear relationship with votes.
